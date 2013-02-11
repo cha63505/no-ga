@@ -1,0 +1,9 @@
+{
+  "name": "no-ga",
+  "fullName": "NO Google Analytics",
+  "id": "jid1-JcGokIiQyjoBAQ",
+  "description": "Blocks Google Analytics",
+  "author": "Erik Vold <erikvvold@gmail.com>",
+  "license": "MPL 2.0",
+  "version": "0.1"
+}
