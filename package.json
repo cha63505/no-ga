@@ -5,6 +5,12 @@
   "description": "Blocks Google Analytics",
   "author": "Erik Vold <erikvvold@gmail.com>",
   "license": "MPL 2.0",
-  "version": "0.3",
+  "version": "0.5",
+  "preferences": [{
+    "type": "bool",
+    "name": "logging",
+    "value": false,
+    "title": "Log blocked requests"
+  }],
   "dependencies": ["content-policy"]
 }
