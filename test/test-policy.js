@@ -9,7 +9,7 @@ const { defer, all } = require('sdk/core/promise');
 
 let gaRedirect = require('./ga-redirect');
 
-const { events } = require("no-ga/policy");
+const { events } = require("../lib/policy");
 
 /*
 exports["test policy xhr"] = function(assert, done) {
@@ -41,7 +41,7 @@ exports["test script tag"] = function(assert, done) {
         tabP.resolve(aTab);
       }
     })
-    all(tabP.promise, blockedP.promise).then(args => {
+    all([ tabP.promise, blockedP.promise ]).then(args => {
       let tab = args[0];
       tab.close(done);
     });
@@ -63,7 +63,7 @@ exports["test policy tab"] = function(assert, done) {
         tabP.resolve(aTab);
       }
     })
-    all(tabP.promise, blockedP.promise).then(args => {
+    all([ tabP.promise, blockedP.promise ]).then(args => {
       let tab = args[0];
       tab.close(done);
     });

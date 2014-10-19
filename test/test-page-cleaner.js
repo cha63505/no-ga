@@ -6,7 +6,7 @@
 const tabs = require('sdk/tabs');
 const { defer, all } = require('sdk/core/promise');
 
-require('no-ga/cleaners/page');
+require('../lib/cleaners/page');
 
 exports['test page link cleaner'] = function(assert, done) {
   tabs.open({

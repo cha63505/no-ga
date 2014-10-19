@@ -3,7 +3,7 @@
 const tabs = require('sdk/tabs');
 
 const { serve } = require('./httpd');
-require('no-ga/cleaners/redirect');
+require('../lib/cleaners/redirect');
 
 const port = 8099;
 const host = 'http://localhost:' + port + '/';

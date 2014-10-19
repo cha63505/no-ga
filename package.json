@@ -1,16 +1,24 @@
 {
   "name": "no-ga",
   "fullName": "NO Google Analytics",
-  "id": "jid1-JcGokIiQyjoBAQ",
+  "id": "jid1-JcGokIiQyjoBAQ@jetpack",
   "description": "Blocks Google Analytics",
   "author": "Erik Vold <erikvvold@gmail.com>",
   "license": "MPL 2.0",
-  "version": "0.6.1",
+  "version": "0.6.2",
+  "main": "./lib/main.js",
   "preferences": [{
     "type": "bool",
     "name": "logging",
     "value": false,
     "title": "Log blocked requests"
   }],
-  "dependencies": ["pathfinder"]
+  "dependencies": {
+    "addon-pathfinder": "1.0.2",
+    "content-policy": "0.0.1"
+  },
+  "devDependencies": {
+    "addon-httpd": "0.0.2"
+  }
 }
+

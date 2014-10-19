@@ -4,7 +4,7 @@ const { Ci } = require('chrome');
 const { newURI } = require('sdk/url/utils');
 const querystring = require('sdk/querystring');
 
-const events = require('pathfinder/connection/events');
+const events = require('addon-pathfinder/connection/events');
 
 const fixtures = require('./fixtures');
 
